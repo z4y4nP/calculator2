@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+      .calculator{
+        width:100%;
+        max-width:300px;
+        margin:50px auto;
+      }
+      .calculator-screen{
+        width:100%;
+        height:50px;
+        text-align:right;
+        padding:10px;
+        font-size:1.5em;
+      }
+      .btn
+      {
+        font-size:1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+ 
+      <div class="calculator">
+        <input type="text" id="screen" class="form-control calculator-screen" disabled>
+         <br>
+
+        <div class="row">
+          <button class="btn btn-secondary col-3" onclick="clearScreen()" >C</button>
+          
+           <button class="btn btn-secondary col-3" onclick="appendToScreen('7')" >7</button>
+            <button class="btn btn-secondary col-3" onclick="appendToScreen('8')" >8</button>
+            <button class="btn btn-secondary col-3" onclick="appendToScreen('9')" >9</button>
+        </div>
+        <br>
+          <div class="row">
+           <button class="btn btn-secondary col-3" onclick="appendToScreen('4')" >4</button>
+            <button class="btn btn-secondary col-3" onclick="appendToScreen('5')" >5</button>
+            <button class="btn btn-secondary col-3" onclick="appendToScreen('6')" >6</button>
+            <button class="btn btn-secondary col-3" onclick="appendToScreen('/')" >/</button>
+        </div>
+        <br>
+           <div class="row">
+           <button class="btn btn-secondary col-3" onclick="appendToScreen('1')" >1</button>
+            <button class="btn btn-secondary col-3" onclick="appendToScreen('2')" >2</button>
+            <button class="btn btn-secondary col-3" onclick="appendToScreen('3')" >3</button>
+            <button class="btn btn-secondary col-3" onclick="appendToScreen('*')" >*</button>
+        </div>
+        <br>
+           <div class="row">
+           <button class="btn btn-secondary col-6" onclick="appendToScreen('0')" >0</button>
+            <button class="btn btn-secondary col-3" onclick="appendToScreen('.')" >.</button>
+            <button class="btn btn-secondary col-3" onclick="calculateResult()" >=</button>
+         
+        </div>
+        <br>
+         <div class="row">
+           <button class="btn btn-secondary col-6" onclick="appendToScreen('-')" >-</button>
+            <button class="btn btn-secondary col-6" onclick="appendToScreen('+')" >+</button>
+          
+         
+        </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</html>
